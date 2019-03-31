@@ -30,14 +30,14 @@
     ?>
     <?php foreach($subMenu as $sm) :  ?>
       <li class="nav-item <?php if($title == $sm['title']){echo "active";} ?>">
-        <a class="nav-link" href="<?php echo site_url($sm['url']) ?>">
+        <a class="nav-link pb-0" href="<?php echo site_url($sm['url']) ?>">
           <i class="<?php echo $sm['icon'] ?>"></i>
           <span><?php echo $sm['title']; ?></span>
         </a>
       </li>
       
     <?php endforeach; ?>
-    <hr class="sidebar-divider">
+    <hr class="sidebar-divider mt-3">
   <?php endforeach; ?>
   
 
